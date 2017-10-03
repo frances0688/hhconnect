@@ -12,6 +12,8 @@ import { AuthService } from '../../services/auth.service';
 export class AuthSignupComponent {
 
   user = new User({
+    firstName: '',
+    lastName: '',
     email: '',
     password: ''
   });
