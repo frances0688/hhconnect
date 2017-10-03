@@ -9,6 +9,8 @@ import { AuthService } from './services/auth.service';
 import { RequireAuthService } from './guards/require-auth.service';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 import { AuthLogoutComponent } from './components/auth-logout/auth-logout.component';
+import { AuthSignupComponent } from './components/auth-signup/auth-signup.component';
+import { AuthUserComponent } from './components/auth-user/auth-user.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'tasks', pathMatch: 'full' },
@@ -21,7 +23,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AuthLoginComponent,
-    AuthLogoutComponent
+    AuthLogoutComponent,
+    AuthSignupComponent,
+    AuthUserComponent
   ],
   imports: [
     BrowserModule,
