@@ -1,0 +1,41 @@
+<form>
+    <h1>When?</h1>
+    <div>
+      <p>I'm available these days:</p>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Monday" value="Monday">
+      <label>Mon</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Tuesday" value="Tuesday">
+      <label>Tue</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Wednesday" value="Wednesday">
+      <label>Wed</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Thursday" value="Thursday">
+      <label>Thu</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Friday" value="Friday">
+      <label>Fri</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Saturday" value="Saturday">
+      <label>Sat</label>
+      <input type="checkbox" [(ngModel)]="user.availability.day" name="Sunday" value="Sunday">
+      <label>Sun</label>
+    </div>
+    <div>
+      <p>I'm available these nights:</p>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Monday" value="Monday">
+      <label>Mon</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Tuesday" value="Tuesday">
+      <label>Tue</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Wednesday" value="Wednesday">
+      <label>Wed</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Thursday" value="Thursday">
+      <label>Thu</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Friday" value="Friday">
+      <label>Fri</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Saturday" value="Saturday">
+      <label>Sat</label>
+      <input type="checkbox" [(ngModel)]="user.availability.night" name="Sunday" value="Sunday">
+      <label>Sun</label>
+    </div>
+    <div class="form-group actions">
+      <button (click)="signup()">Save</button>
+      <p *ngIf="error" class="error">{{error}}</p>
+    </div>
+  </form>

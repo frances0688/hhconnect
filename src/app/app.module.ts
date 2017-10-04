@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './modules/material.module';
 
 
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import { MenuIconsComponent } from './components/menu-icons/menu-icons.component
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { AvailabilityFormComponent } from './components/availability-form/availability-form.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,8 @@ const routes: Routes = [
     LoginPageComponent,
     ProfilePageComponent,
     SignupPageComponent,
-    MenuIconsComponent
+    MenuIconsComponent,
+    AvailabilityFormComponent
   ],
   imports: [
     BrowserModule,

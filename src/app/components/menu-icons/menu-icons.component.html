@@ -1,50 +1,24 @@
-  <!-- <mat-toolbar color="primary">
-     
-      <span><mat-icon>mood</mat-icon></span>
-  
-      <span>Yay, Material in Angular 2!</span>
-  
-      <button mat-icon-button [mat-menu-trigger-for]="menu">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-  
-    <mat-menu x-position="before" #menu="matMenu">
-      <button mat-menu-item>Option 1</button>
-      <button mat-menu-item>Option 2</button>
-    </mat-menu>
-  
-    <mat-card>
-      <button mat-button>All</button>
-      <button mat-raised-button>Of</button>
-      <button mat-raised-button color="primary">The</button>
-      <button mat-raised-button color="accent">Buttons</button>
-    </mat-card>
-  
-    <span class="done">
-      <button mat-fab>
-        <mat-icon>check circle</mat-icon>
-      </button>
-    </span> -->
-<mat-toolbar color="primary">W</mat-toolbar>
-  <button mat-icon-button [mat-menu-trigger-for]="menu">
-    <mat-icon>more_vert</mat-icon>
+<md-toolbar color="primary">
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+    <md-icon>more_vert</md-icon>
   </button>
-
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item>
       <span>Profile Info</span>
     </button>
-    <button mat-menu-item>
+    <button md-menu-item>
       <span>Contact Details</span>
     </button>
-    <button mat-menu-item>
+    <button md-menu-item>
       <span>Credentials</span>
     </button>
-    <button mat-menu-item>
+    <button md-menu-item>
       <span>Availability</span>
     </button>
-    <button mat-menu-item>
+    <button md-menu-item>
       <span>Experience</span>
     </button>
-  </mat-menu>
+  </md-menu>
+  <span class=" text">Hi {{user.firstName}}!</span>
+</md-toolbar>
 
