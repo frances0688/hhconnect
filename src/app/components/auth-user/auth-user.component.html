@@ -3,12 +3,12 @@
     <span class=" text"></span>
   </div>
   <div *ngIf="!loading && user">
-    <span class=" text">{{user.email}}</span>
+    <span class=" text">Welcome, {{user.firstName}}!</span>
     <app-auth-logout></app-auth-logout>
   </div>
-  <div *ngIf="!loading && anon">
+  <!-- <div *ngIf="!loading && anon">
     <a (click)="toggleForms()">login or signup</a>
     <app-auth-login *ngIf="formsVisible"></app-auth-login>
     <app-auth-signup *ngIf="formsVisible"></app-auth-signup>
-  </div>
+  </div> -->
 </div>
