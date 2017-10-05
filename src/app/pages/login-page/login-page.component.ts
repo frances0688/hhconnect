@@ -12,4 +12,8 @@ export class LoginPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleSuccess() {
+    console.log('!!!!');
+  }
+
 }

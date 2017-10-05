@@ -29,29 +29,29 @@ export class AuthService {
   }
 
   signup(user: User) {
-    let options = new RequestOptions();
+    const options = new RequestOptions();
     options.withCredentials = true;
     return this.http.post(apiUrl + '/signup', user, options)
       .map(res => {
-        let user = new User(res.json());
+        user = new User(res.json());
         this.setUser(user);
         return user;
       });
   }
 
   login(user: User) {
-    let options = new RequestOptions();
+    const options = new RequestOptions();
     options.withCredentials = true;
     return this.http.post(apiUrl + '/login', user, options)
       .map(res => {
-        let user = new User(res.json());
+        user = new User(res.json());
         this.setUser(user);
         return user;
       });
   }
 
   logout() {
-    let options = new RequestOptions();
+    const options = new RequestOptions();
     options.withCredentials = true;
     return this.http.post(apiUrl + '/logout', {}, options)
     .map(res => {
@@ -61,11 +61,11 @@ export class AuthService {
   }
 
   me() {
-    let options = new RequestOptions();
+    const options = new RequestOptions();
     options.withCredentials = true;
     return this.http.get(apiUrl + '/me', options)
       .map(res => {
-        let user = new User(res.json());
+        const user = new User(res.json());
         this.setUser(user);
         return user;
       }, (err) => {

@@ -18,20 +18,15 @@ import { AuthLogoutComponent } from './components/auth-logout/auth-logout.compon
 import { AuthSignupComponent } from './components/auth-signup/auth-signup.component';
 import { AuthUserComponent } from './components/auth-user/auth-user.component';
 import { MenuIconsComponent } from './components/menu-icons/menu-icons.component';
+import { AvailabilityFormComponent } from './components/availability-form/availability-form.component';
 
 
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
-import { AvailabilityFormComponent } from './components/availability-form/availability-form.component';
+import { AvailabilityPageComponent } from './pages/availability-page/availability-page.component';
 
-
-const routes: Routes = [
-  { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
-  { path: 'auth/login', component: LoginPageComponent },
-  { path: 'auth/signup', component: SignupPageComponent },
-  { path: 'profile', component: ProfilePageComponent }
-];
+import { routes } from './routes/routes';
 
 @NgModule({
   declarations: [
@@ -44,7 +39,8 @@ const routes: Routes = [
     ProfilePageComponent,
     SignupPageComponent,
     MenuIconsComponent,
-    AvailabilityFormComponent
+    AvailabilityFormComponent,
+    AvailabilityPageComponent
   ],
   imports: [
     BrowserModule,

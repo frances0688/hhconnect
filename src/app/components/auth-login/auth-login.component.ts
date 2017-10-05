@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { User } from '../../models/user.model';
 import { AuthService } from '../../services/auth.service';
@@ -9,6 +9,8 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./auth-login.component.css']
 })
 export class AuthLoginComponent {
+
+  @Output() onSuccess = new EventEmitter<null>();
 
   user = new User({
     email: '',
@@ -22,7 +24,7 @@ export class AuthLoginComponent {
   login() {
     this.error = null;
     this.auth.login(this.user).subscribe(
-      (user) => this.user = user,
+      (user) => this.onSuccess.emit(),
       (err) => this.error = err
     );
   }

@@ -1,24 +1,24 @@
-<md-toolbar color="primary">
+<md-toolbar color="background">
   <button md-icon-button [mdMenuTriggerFor]="menu">
     <md-icon>more_vert</md-icon>
   </button>
   <md-menu #menu="mdMenu">
-    <button md-menu-item>
+    <a routerLink="/profile" md-menu-item>
       <span>Profile Info</span>
-    </button>
-    <button md-menu-item>
+    </a>
+    <a routerLink="/crisis-center" md-menu-item>
       <span>Contact Details</span>
-    </button>
-    <button md-menu-item>
+    </a>
+    <a routerLink="/crisis-center" md-menu-item>
       <span>Credentials</span>
-    </button>
-    <button md-menu-item>
+    </a>
+    <a routerLink="/availability" md-menu-item>
       <span>Availability</span>
-    </button>
-    <button md-menu-item>
+    </a>
+    <a routerLink="/crisis-center" md-menu-item>
       <span>Experience</span>
-    </button>
+    </a>
   </md-menu>
-  <span class=" text">Hi {{user.firstName}}!</span>
+  <!-- <span class=" text">Hi {{user.firstName}}!</span> -->
 </md-toolbar>
 

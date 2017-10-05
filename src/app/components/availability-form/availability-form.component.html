@@ -1,41 +1,41 @@
-<form>
+<form #myForm = "ngForm" (ngSubmit)="submitForm(myForm)">
     <h1>When?</h1>
     <div>
       <p>I'm available these days:</p>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Monday" value="Monday">
+      <input type="checkbox" [(ngModel)]="user.availability.mondayDay" name="mondayDay">
       <label>Mon</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Tuesday" value="Tuesday">
+      <input type="checkbox" [(ngModel)]="user.availability.tuesdayDay" name="tuesdayDay">
       <label>Tue</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Wednesday" value="Wednesday">
+      <input type="checkbox" [(ngModel)]="user.availability.wednesdayDay" name="wednesdayDay">
       <label>Wed</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Thursday" value="Thursday">
+      <input type="checkbox" [(ngModel)]="user.availability.thursdayDay" name="thrusdayDay">
       <label>Thu</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Friday" value="Friday">
+      <input type="checkbox" [(ngModel)]="user.availability.fridayDay" name="fridayDay">
       <label>Fri</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Saturday" value="Saturday">
+      <input type="checkbox" [(ngModel)]="user.availability.saturdayDay" name="saturdayDay">
       <label>Sat</label>
-      <input type="checkbox" [(ngModel)]="user.availability.day" name="Sunday" value="Sunday">
+      <input type="checkbox" [(ngModel)]="user.availability.sundayDay" name="sundayDay">
       <label>Sun</label>
     </div>
     <div>
       <p>I'm available these nights:</p>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Monday" value="Monday">
+      <input type="checkbox" [(ngModel)]="user.availability.mondayNight" name="mondayNight">
       <label>Mon</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Tuesday" value="Tuesday">
+      <input type="checkbox" [(ngModel)]="user.availability.tuesdayNight" name="tuesdayNight">
       <label>Tue</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Wednesday" value="Wednesday">
+      <input type="checkbox" [(ngModel)]="user.availability.wednesdayNight" name="wednesdayNight">
       <label>Wed</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Thursday" value="Thursday">
+      <input type="checkbox" [(ngModel)]="user.availability.thursdayNight" name="thursdayNight">
       <label>Thu</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Friday" value="Friday">
+      <input type="checkbox" [(ngModel)]="user.availability.fridayNight" name="fridayNight">
       <label>Fri</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Saturday" value="Saturday">
+      <input type="checkbox" [(ngModel)]="user.availability.saturdayNight" name="saturdayNight">
       <label>Sat</label>
-      <input type="checkbox" [(ngModel)]="user.availability.night" name="Sunday" value="Sunday">
+      <input type="checkbox" [(ngModel)]="user.availability.sundayNight" name="sundayNight">
       <label>Sun</label>
     </div>
     <div class="form-group actions">
-      <button (click)="signup()">Save</button>
-      <p *ngIf="error" class="error">{{error}}</p>
+      <label for="submit"> </label>
+      <button id="submit" name="submit">Save</button>
     </div>
   </form>

@@ -11,10 +11,10 @@ import { AuthService } from '../../services/auth.service';
 })
 export class AuthUserComponent implements OnInit {
 
-  loading: boolean = true;
+  loading = true;
   anon: boolean;
   user: User;
-  formsVisible: boolean = false;
+  formsVisible = false;
 
   constructor(private authService: AuthService) { }
 
