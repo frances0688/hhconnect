@@ -27,6 +27,8 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { AvailabilityPageComponent } from './pages/availability-page/availability-page.component';
 
 import { routes } from './routes/routes';
+import { ExperienceFormComponent } from './components/experience-form/experience-form.component';
+import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { routes } from './routes/routes';
     SignupPageComponent,
     MenuIconsComponent,
     AvailabilityFormComponent,
-    AvailabilityPageComponent
+    AvailabilityPageComponent,
+    ExperienceFormComponent,
+    ExperiencePageComponent
   ],
   imports: [
     BrowserModule,

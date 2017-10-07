@@ -1,0 +1,70 @@
+<form #myForm = "ngForm" (ngSubmit)="submitForm(myForm)">
+    <h1>I am experienced in:</h1>
+    <ul>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.alz-dem" name="Alzheimer's-Dementia">
+        <label>Alzheimer's / Dementia</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.parkinson" name="Parkinson's">
+        <label>Parkinson's</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.stroke" name="Stroke">
+        <label>Stroke</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.diabetes" name="Diabetes">
+        <label>Diabetes</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.par-quad" name="Paraplegic-Quadriplegic">
+        <label>Paraplegic / Quadriplegic</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.hoyer" name="HoyerLift">
+        <label>Hoyer Lift</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.transfers" name="Tranfers">
+        <label>Transfers</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.personalcare" name="PersonalCare">
+        <label>Personal Care</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.incontinence" name="Incontinence">
+        <label>Incontinence</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.bedbath" name="BedBath">
+        <label>Bed Bath</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.catheter" name="EmptyCatheterBag">
+        <label>Empty Catheter Bag</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.mealprep" name="MealPrep">
+        <label>Meal Preparation</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.medremind" name="MedReminder">
+        <label>Medication Reminder</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.vitals" name="Vitals">
+        <label>Check Vitals</label>
+      </li>
+      <li>
+        <input type="checkbox" [(ngModel)]="user.experience.bedsheets" name="BedSheetsChange">
+        <label>Change Sheets While Patient Is In Bed</label>
+      </li>
+     
+    </ul>
+    <div class="form-group actions">
+      <label for="submit"> </label>
+      <button id="submit" name="submit">Save</button>
+    </div>
+  </form>

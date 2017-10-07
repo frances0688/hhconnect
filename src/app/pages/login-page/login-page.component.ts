@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { RouterModule, Routes, Router } from '@angular/router';
+import { routes } from '../../routes/routes';
+
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
@@ -7,13 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   handleSuccess() {
-    console.log('!!!!');
+    this.router.navigateByUrl('/profile');
   }
-
 }

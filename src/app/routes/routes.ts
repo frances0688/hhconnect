@@ -4,6 +4,8 @@ import { LoginPageComponent } from '../pages/login-page/login-page.component';
 import { ProfilePageComponent } from '../pages/profile-page/profile-page.component';
 import { SignupPageComponent } from '../pages/signup-page/signup-page.component';
 import { AvailabilityPageComponent } from '../pages/availability-page/availability-page.component';
+import { ExperiencePageComponent } from '../pages/experience-page/experience-page.component';
+
 
 
 const routes: Routes = [
@@ -11,7 +13,8 @@ const routes: Routes = [
   { path: 'auth/login', component: LoginPageComponent },
   { path: 'auth/signup', component: SignupPageComponent },
   { path: 'profile', component: ProfilePageComponent },
-  { path: 'availability', component: AvailabilityPageComponent }
+  { path: 'availability', component: AvailabilityPageComponent },
+  { path: 'experience', component: ExperiencePageComponent }
 ];
 
 export { routes };
